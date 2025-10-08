@@ -1,1 +1,28 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Text Wingman Options</title>
+    <style>
+      body{font-family:system-ui,Segoe UI,Roboto,Arial;padding:16px;color:#111}
+      label{display:block;margin-top:8px;font-weight:600}
+      input[type=text], input[type=password]{width:100%;padding:8px;border:1px solid #bbb;border-radius:6px}
+      button{margin-top:12px;padding:8px 12px}
+      .hint{margin-top:10px;color:#555;font-size:13px}
+    </style>
+  </head>
+  <body>
+    <h3>Text Wingman Options</h3>
+    <label>Gemini API Key</label>
+    <input id="key" type="password" placeholder="AIza..." />
+    <label>Model</label>
+    <input id="model" type="text" value="gemini-2.5-flash" />
+    <label>Temperature (0-1)</label>
+    <input id="temp" type="text" value="0.6" />
+    <div class="hint">Your key is stored locally in the extension storage (not shipped anywhere).</div>
+    <button id="save">Save</button>
+    <div id="msg" style="margin-top:10px;color:green"></div>
+    <script src="options.js"></script>
+  </body>
+</html>
 
